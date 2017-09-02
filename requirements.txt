@@ -1,3 +1,6 @@
+certifi==2017.7.27.1
+chardet==3.0.4
+idna==2.6
 inflect==0.2.5
 irc==16.0
 jaraco.classes==1.4.1
@@ -9,5 +12,9 @@ jaraco.stream==1.1.2
 jaraco.text==1.9.2
 more-itertools==3.2.0
 pytz==2017.2
+requests==2.18.4
 six==1.10.0
+slackclient==1.0.9
 tempora==1.9
+urllib3==1.22
+websocket-client==0.44.0
