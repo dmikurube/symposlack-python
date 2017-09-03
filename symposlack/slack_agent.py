@@ -15,3 +15,10 @@ class Slack(object):
             return self.slack_client.rtm_read()
         else:
             return []
+
+    def post(self, channel, line, user):
+        self.slack_client.api_call(
+            "chat.postMessage",
+            channel=channel,
+            text=line,
+            user=user)
