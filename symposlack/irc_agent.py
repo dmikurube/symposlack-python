@@ -56,6 +56,9 @@ class Irc(object):
         topic = event.arguments[0]
         self.messages.append("* {0} topic: {1}".format(nick, topic))
 
+    def privmsg(self, target, line):
+        self.connection.privmsg(target, line)
+
     def process_once(self, timeout):
         self.reactor.process_once(timeout)
 
